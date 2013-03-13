@@ -1,0 +1,18 @@
+---
+layout: default
+classes: article
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% include topic-toc.html %}
+  <div class="content">
+  {{ content }}
+  </div>
+  <div class="references">
+    <references>
+	  {% for link in page.links %}
+      <div class="link"><em>{{ forloop.index }}</em>  <a id="link_{{ forloop.index }}" href="{{ link }}">{{ link }}</a></div>
+	  {% endfor %}
+    </references>
+  </dif>
+</article>

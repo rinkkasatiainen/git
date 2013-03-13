@@ -1,0 +1,15 @@
+<header>
+  <h1><a href="/">Rinkkasatiainen.github.com</a></h1>
+  <p>Github pages - my own learning diary</p>
+  
+  <div class="navigation">
+    {% for page in site.pages %}
+      {% if page.level == 1 %}
+        <h5 class="hierarchy-{{ page.level }}"><a href="{{ page.url }}">{{ page.title }}</h5>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <hr/>
+  <p class="view"><a href="https://github.com/rinkkasatiainen">View My GitHub Profile</a></p>
+
+</header>
