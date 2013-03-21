@@ -1,0 +1,9 @@
+<references>
+  {% for link in page.links %}
+    {% for l in link[1] %}
+      <div class="link">
+        <em>{{ link[0] }}</em>: {{ l[0] }} - <a id="link_{{ link[0] }}" href="{{ l[1] }}">{{ l[1] }}</a>
+      </div>
+    {% endfor %}
+  {% endfor %}
+</references>

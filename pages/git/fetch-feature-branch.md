@@ -4,8 +4,9 @@ category: tools
 title: Feature branch - how to fetch those
 level: 2
 author: Aki
-links: 
- - http://www.mariopareja.com/blog/archive/2010/01/11/how-to-push-a-new-local-branch-to-a-remote.aspx
+links:
+  1: 
+    name: http://www.mariopareja.com/blog/archive/2010/01/11/how-to-push-a-new-local-branch-to-a-remote.aspx
 ---
 
 

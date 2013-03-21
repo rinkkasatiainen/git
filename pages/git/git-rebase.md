@@ -5,7 +5,8 @@ title: Git Rebase, my best friend
 level: 2
 author: Aki
 links:
- - http://blog.8thlight.com/kevin-liddle/2012/09/27/mind-your-git-manners.html
+  1:
+     Mind your git manners : http://blog.8thlight.com/kevin-liddle/2012/09/27/mind-your-git-manners.html
 ---
 
 ##### git rebase is our best friend [1](#link_1)
