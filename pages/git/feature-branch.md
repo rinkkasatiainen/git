@@ -6,7 +6,7 @@ level: 2
 author: Aki
 links:
   1:
-    name : http://www.mariopareja.com/blog/archive/2010/01/11/how-to-push-a-new-local-branch-to-a-remote.aspx
+    Using feature branches : http://www.mariopareja.com/blog/archive/2010/01/11/how-to-push-a-new-local-branch-to-a-remote.aspx
 ---
 
 ##### I've heard that feature branches are good things? How's that

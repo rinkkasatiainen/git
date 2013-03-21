@@ -6,7 +6,7 @@ level: 2
 author: Aki
 links:
   1: 
-    name: http://www.mariopareja.com/blog/archive/2010/01/11/how-to-push-a-new-local-branch-to-a-remote.aspx
+    Using feature branches: http://www.mariopareja.com/blog/archive/2010/01/11/how-to-push-a-new-local-branch-to-a-remote.aspx
 ---
 
 
@@ -16,5 +16,5 @@ This is how to do that[1](#link_1) (have not tried yet):
 
 {% highlight bash %}
 git fetch origin
-git checkout --track origin/plugin
+git checkout -b quick-fix --track origin/some_name_i_dont_want_to_use
 {% endhighlight %}

@@ -32,6 +32,7 @@ author: Aki
    > - [fix my commit](git/fixing-commits.html)
    > - [add files to last commit](git/add-files-to-latest-commit.html)
 1. Conflicts
+   > - What to do?
 1. Fixing branches
 1. [Pushing changes to repository](git/push-to-master.html)
    > - never use push -f
