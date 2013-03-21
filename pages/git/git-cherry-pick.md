@@ -49,4 +49,53 @@ A: You need to cherry-pick that particular commit to a origin/master HEAD. And f
  1. push commit
  1. delete branch
 
+So, the workflow: gi
 
+{% highlight bash %}
+git status ; git log --oneline -5
+# On branch gh-pages
+# Your branch is ahead of 'origin/gh-pages' by 4 commits.
+#
+nothing to commit, working directory clean
+df7f75e Renaming title
+7a8c6c6 Using feature branches
+b9151ca This is commit I want to push to master!
+db0f602 Adding a CASE for cherry-picking
+99cd3fa CNAME
+{% endhighlight %}
+
+
+Then cherry-pick
+
+{% highlight bash %}
+$ git cherry-pick --no-commit b9151ca
+AMBWKS196:git.rinkkasatiainen.fi akis$ git status
+# On branch fastfix
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+< new and modified files, changes from the cherry-picked commit >
+#
+
+{% endhighlight %}
+
+
+And push
+
+{% highlight bash %}
+$git commit -m "cherry-pick b9151ca"
+[fastfix e52c19b] cherry-pick b9151ca
+ 5 files changed, 17 insertions(+), 9 deletions(-)
+ create mode 100644 _includes/references.html
+$ git push origin fastfix:gh-pages
+Username for [...]
+Password for [...]
+Counting objects: 19, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.30 KiB, done.
+Total 11 (delta 6), reused 0 (delta 0)
+To https://github.com/rinkkasatiainen/git.git
+   99cd3fa..e52c19b  fastfix -> gh-pages
+$ 
+{% endhighlight %}
