@@ -44,3 +44,6 @@ Changes between working tree and the repository HEAD
 {% highlight bash %}
 $ git diff HEAD
 {% endhighlight %}
+
+
+#### What has changed <since>

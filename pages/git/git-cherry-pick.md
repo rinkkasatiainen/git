@@ -57,13 +57,19 @@ git status ; git log --oneline -5
 # Your branch is ahead of 'origin/gh-pages' by 4 commits.
 #
 nothing to commit, working directory clean
-df7f75e Renaming title
-7a8c6c6 Using feature branches
-b9151ca This is commit I want to push to master!
+df7f75e It compiles, but tests do not pass!
+7a8c6c6 Still working on stuff, does not compile
+b9151ca This is commit I want to push to master! #<-- this I want to push to master""
 db0f602 Adding a CASE for cherry-picking
 99cd3fa CNAME
 {% endhighlight %}
 
+Create new branch from origin/master
+{% highlight bash %}
+$ git fetch; git checkout -b fastfix origin/gh-pages
+Branch fastfix set up to track remote branch gh-pages from origin.
+Switched to a new branch 'fastfix'
+{% endhighlight %}
 
 Then cherry-pick
 
