@@ -51,3 +51,5 @@ But, if your files are already tracked, you can do one command to use both 'git 
 $ git commit -am "Adding file to staging"
 [master 80700c1] Adding file to staging
 {% endhighlight %}
+
+

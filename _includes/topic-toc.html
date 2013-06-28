@@ -1,29 +1,30 @@
 <div class="topic-toc" class="toc">
   <h4>Table of contents</h4>
+
+ 
   {% if page.level == 1 %}
-	{% assign parent_page = {{page.url}} %}
+    {% assign parent_page = {{page.url}} %}
     {% capture child_page_root %}{{ page.url | remove:'.html'}}/{% endcapture %}
   {% else %}
     {% assign path_elements={{page.url | remove_first:'/' | replace:'/','~' | split:'~'}}{% assign %}
     {% capture child_page_root %}{% for p_element in path_elements %}{% if forloop.rindex0 > 0 %}/{{p_element}}{% endif %}{% endfor %}/{% endcapture %}
 
     {% capture parent_page_url %}{% for p_element in path_elements %}{% if forloop.rindex0 > 0 %}/{{p_element}}{% endif %}{% endfor %}{% endcapture %}
-	{% capture parent_page %}{{ parent_page_url }}.html{% endcapture %}
+    {% capture parent_page %}{{ parent_page_url }}.html{% endcapture %}
   {% endif %}
-  <ul>
   {% for p in site.pages %}	
     {% if p.url == parent_page %}
-      <li><toc class="hierarchy-{{ p.level }}"><a href="{{ p.url }}">{{ p.title }}</a></toc></li>
+      <h5 class="hierarchy-{{ p.level }}"><a href="{{ p.url }}">{{ p.title }}</a></h5>
     {% endif %}
   {% endfor %}
-  <ul>
   {% for p in site.pages %}
     {% if p.url contains child_page_root %}
       {% if p.level != 1%}
-        <li><toc class="hierarchy-{{ p.level }}"><a href="{{ p.url }}">{{ p.title }}</a></toc></li>
+        <h5 class="hierarchy-{{ p.level }}"><a href="{{ p.url }}">{{ p.title }}</a></h5>
 	    {% endif %}
     {% endif %}  
   {% endfor %}
-  </ul>
-  </ul>
+   
+
+
 </div>
