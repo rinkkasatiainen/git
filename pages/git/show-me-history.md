@@ -46,4 +46,4 @@ $ git diff HEAD
 {% endhighlight %}
 
 
-#### What has changed <since>
+#### What has changed &lt;since&gt;
