@@ -29,6 +29,8 @@ no changes added to commit (use "git add" and/or "git commit -a")
 What should I do?
 
 
+nowadays, I like patching more  - link to patching later
+
 {% highlight bash %}
 $ git add .
 $ git status

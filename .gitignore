@@ -2,3 +2,7 @@ _site/
 .DS_Store
 thisShouldNotBeInGit.txt
 *.swp
+pages/git/adding-existing-file-to-gitignore.md
+*.md~
+*.~
+*~
