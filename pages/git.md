@@ -40,17 +40,5 @@ author: Aki
    > - [copying new commits from SVN to git](git/git-svn-local-commits-to-git.html) 
    > - [merging branches from other remote](git/merge-from-other-remote.html)
 
-
-
-``
- java.lang.AssertionError:
- Expected: <true>
-    but: was <false>
-      at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-      at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
-     [...]
-``
-
-
 ---
 
