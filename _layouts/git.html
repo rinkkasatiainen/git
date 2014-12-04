@@ -1,0 +1,16 @@
+---
+layout: default
+classes: article
+---
+<article>
+  <h1>{{ page.title }}</h1>
+
+  {% include topic-toc.html %} 
+
+  <div class="content float">
+  {{ content }}
+  </div>
+  <div class="references">
+	  {% include references.html %}
+  </dif>
+</article>

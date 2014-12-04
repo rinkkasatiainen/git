@@ -22,6 +22,7 @@ author: Aki
    > - [My friend created a feature branch - how to fetch that](git/fetch-feature-branch.html)
    > - I need to make a quick fix to fix that one small thing. (stash, checkout -b)
    > - [cherry-pick. I need those fixes to this branch too](git/git-cherry-pick.html)
+   > - [copy changed files to server](git/git-log-xargs-to-do-stuff-to-changed-files.html)
 1. How to use branches
    > - viewing what branches there are available
    > - merging branches
@@ -31,6 +32,7 @@ author: Aki
 1. Sometimes I make mistakes and then I need to:
    > - [fix my commit](git/fixing-commits.html)
    > - [add files to last commit](git/add-files-to-latest-commit.html)
+   > - [removing files from GIT source control, but not from ](git/remove-files-from-git)
 1. Conflicts
    > - What to do?
 1. Fixing branches
